@@ -8,7 +8,7 @@ import { defineConfig } from 'vitest/config'
 const base = process.env.BASE_PATH ?? '/'
 
 export default defineConfig({
-  base,
+  base: '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
